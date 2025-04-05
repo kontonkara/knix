@@ -1,0 +1,12 @@
+{ pkgs, username, ... }:
+
+{
+  users.users.kontonkara = {
+    isNormalUser = true;
+    extraGroups = [ "wheel" "networkmanager" ];
+    packages = with pkgs; [
+      tree
+    ];
+    hashedPassword = "$6$9H9XYvFnK3rZOZCb$5bf3tFa9wpLO.Ad.XJwtbeIRROH0bp6Uy6wh/ZnZsLmdJLmiD.YBJPNBEA8y7R9Wi8jmow/uax6luAXCcdfTm/";
+  };
+}
