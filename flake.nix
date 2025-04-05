@@ -36,6 +36,7 @@
           system = "x86_64-linux";
           modules = [
             (import ./system)
+            (import ./home-manager)
             inputs.home-manager.nixosModules.home-manager
           ];
           specialArgs = {
