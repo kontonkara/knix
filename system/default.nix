@@ -7,5 +7,6 @@
     ./services.nix
     ./network.nix
     ./global.nix
+    ./packages.nix
   ];
 }

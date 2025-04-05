@@ -1,6 +1,10 @@
 { ... }:
 
 {
-  networking.hostName = "hp";
-  networking.networkmanager.enable = true;
+  networking = {
+    hostName = "hp";
+    networkmanager = {
+      enable = true;
+    };
+  };
 }

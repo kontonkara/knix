@@ -1,11 +1,11 @@
 { username, ... }:
 
 {
-  # imports = [
-  #   ./packages
-  # ];
+  imports = [
+    ./dotfiles
+  ];
 
-  home-manager.users.kontonkara = {
+  home-manager.users.${username} = {
     home = {
       username = "kontonkara";
       homeDirectory = "/home/kontonkara";
