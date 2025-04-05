@@ -5,7 +5,7 @@
   #   ./packages
   # ];
 
-  home-manager.users.${username} = {
+  home-manager.users.kontonkara = {
     home = {
       username = "kontonkara";
       homeDirectory = "/home/kontonkara";

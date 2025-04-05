@@ -1,7 +1,7 @@
 { pkgs, username, ... }:
 
 {
-  users.users.${username} = {
+  users.users.kontonkara = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" ];
     packages = with pkgs; [

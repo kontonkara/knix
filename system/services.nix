@@ -12,4 +12,9 @@
     pulse.enable = true;
   };
   services.libinput.enable = true;
+  hardware.opengl = {
+    package = pkgs-unstable.mesa.drivers;
+    driSupport32Bit = true;
+    package32 = pkgs-unstable.pkgsi686Linux.mesa.drivers;
+  };
 }
