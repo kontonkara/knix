@@ -4,6 +4,8 @@
   users.users.${username} = {
     packages = with pkgs; [
       tree
+      spotify
+      telegram-desktop
     ];
   };
 
@@ -12,9 +14,10 @@
   environment.systemPackages = with pkgs; [
     vim
     wget
-    git
-    vscode
-    spotify
     keepassxc
+    rofi-wayland
+    waybar
+    dunst
+    kitty
   ];
 }

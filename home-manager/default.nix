@@ -3,6 +3,7 @@
 {
   imports = [
     ./dotfiles
+    ./desktop-environment
   ];
 
   home-manager.users.${username} = {
