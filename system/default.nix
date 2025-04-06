@@ -9,5 +9,6 @@
     ./global.nix
     ./packages.nix
     ./hardware.nix
+    ./locale.nix
   ];
 }
