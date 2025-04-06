@@ -35,6 +35,6 @@
           mkShells = mapAttrs
             (_name: value: import value { inherit pkgs config; });
         in
-        mkShells (builtins.listToAttrs (findModules ./devshells));
+        mkShells (builtins.listToAttrs (findModules ./devShell));
     };
 }
