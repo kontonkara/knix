@@ -8,5 +8,6 @@
     ./network.nix
     ./global.nix
     ./packages.nix
+    ./hardware.nix
   ];
 }
