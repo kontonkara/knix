@@ -10,14 +10,16 @@
   };
 
   nixpkgs.config.allowUnfree = true;
+  programs.waybar.enable = true;
 
   environment.systemPackages = with pkgs; [
     vim
     wget
     keepassxc
     rofi-wayland
-    waybar
     dunst
     kitty
+    networkmanagerapplet
+    xfce.thunar
   ];
 }
