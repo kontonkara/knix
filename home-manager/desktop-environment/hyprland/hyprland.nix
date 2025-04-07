@@ -6,10 +6,6 @@
       enable = true;
     };
     wayland.windowManager.hyprland.settings = {
-      monitor = [
-        "eDP-1, disable" #preferred,auto,auto
-        "HDMI-A-1, 1920x1080@144.00Hz, 0x0, 1"
-      ];
       "$terminal" = "kitty";
       "$fileManager" = "thunar";
       "$menu" = "rofi -show drun -show-icons";
@@ -25,6 +21,7 @@
         "NIXOS_OZONE_WL, 1"
         "MOZ_ENABLE_WAYLAND, 1"
         "MOZ_WEBRENDER, 1"
+        "WLR_NO_HARDWARE_CURSORS, 1"
       ];
       general = {
         gaps_in = 5;
@@ -183,12 +180,5 @@
   
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-
-  environment.sessionVariables = {
-    WLR_NO_HARDWARE_CURSORS = "1";
-    NIXOS_OZONE_WL = "1";
-  };
-
-
   
 }
