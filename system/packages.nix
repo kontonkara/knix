@@ -22,5 +22,6 @@
     kitty
     networkmanagerapplet
     xfce.thunar
+    discord
   ];
 }

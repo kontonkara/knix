@@ -10,5 +10,6 @@
     ./packages.nix
     ./hardware.nix
     ./locale.nix
+    ./gamemode.nix
   ];
 }
