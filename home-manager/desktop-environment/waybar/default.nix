@@ -1,5 +1,5 @@
 {
   imports = [
-    ./hyprpanel.nix
+    ./settings.nix
   ];
 }
