@@ -5,11 +5,15 @@
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     nixos-hardware.url = "github:nixos/nixos-hardware";
     utils.url = "github:numtide/flake-utils";
+    hyprland.url = "github:hyprwm/Hyprland";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    hyprland.url = "github:hyprwm/Hyprland";
+    hyprland-plugins = {
+      url = "github:hyprwm/hyprland-plugins";
+      inputs.hyprland.follows = "hyprland";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, utils, ... }@inputs:
