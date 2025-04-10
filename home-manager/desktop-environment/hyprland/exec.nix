@@ -6,6 +6,7 @@
       exec-once = [
         "dunst"
         "nm-applet --indicator"
+        "waybar"
       ];
     };
   };

@@ -22,5 +22,6 @@
     networkmanagerapplet
     xfce.thunar
     discord
+    wl-clipboard
   ];
 }
